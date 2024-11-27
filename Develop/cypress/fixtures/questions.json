@@ -1,3 +1,29 @@
 {
-    
+    [
+        {
+            "question": "What is the capital of France?",
+            "choices": ["Paris", "London", "Berlin", "Madrid"],
+            "answer": "Paris"
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "choices": ["Earth", "Mars", "Jupiter", "Saturn"],
+            "answer": "Mars"
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "choices": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            "answer": "Pacific Ocean"
+        },
+        {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "choices": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+            "answer": "Harper Lee"
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "choices": ["0", "1", "2", "3"],
+            "answer": "2"
+        }
+    ]
 }
