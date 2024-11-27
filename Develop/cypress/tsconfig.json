@@ -13,7 +13,7 @@
     "include": [
       "**/*.ts",
       "**/*.tsx"
-    ],
+, "component/Quiz.cy.jsx", "e2e/quiz.cy.js"    ],
     "exclude": [
       "node_modules"
     ]
