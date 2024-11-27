@@ -1,20 +1,22 @@
 {
     "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "strict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true,
-      "types": [
-        "cypress"
-      ]
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "types": [
+            "cypress"
+        ]
     },
     "include": [
-      "**/*.ts",
-      "**/*.tsx"
-, "component/Quiz.cy.jsx", "e2e/quiz.cy.js"    ],
+        "**/*.ts",
+        "**/*.tsx",
+        "cypress/component/Quiz.cy.jsx",
+        "cypress/e2e/quiz.cy.js"
+    ],
     "exclude": [
-      "node_modules"
+        "node_modules"
     ]
-  }
+}
