@@ -1,10 +1,7 @@
-import React from 'react';
-import { mount } from '@cypress/react';
-import Quiz from '../../client/src/components/Quiz';
+import React from "react";
+import Quiz from "../../client/src/components/Quiz";
+import "@testing-library/cypress/add-commands";
 
-const quiz = {
-    
-}
 
 // test the Quiz Component
 describe('Quiz Component', () => {

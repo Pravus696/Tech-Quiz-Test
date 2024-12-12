@@ -1,5 +1,5 @@
 {
-    [
+    "quiz":[
         {
             "question": "What is the capital of France?",
             "choices": ["Paris", "London", "Berlin", "Madrid"],
@@ -24,6 +24,31 @@
             "question": "What is the smallest prime number?",
             "choices": ["0", "1", "2", "3"],
             "answer": "2"
+        },
+        {
+            "question": "What is the chemical symbol for water?",
+            "choices": ["H2O", "O2", "CO2", "H2"],
+            "answer": "H2O"
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "choices": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+            "answer": "Leonardo da Vinci"
+        },
+        {
+            "question": "What is the hardest natural substance on Earth?",
+            "choices": ["Gold", "Iron", "Diamond", "Platinum"],
+            "answer": "Diamond"
+        },
+        {
+            "question": "What is the speed of light?",
+            "choices": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+            "answer": "300,000 km/s"
+        },
+        {
+            "question": "Who developed the theory of relativity?",
+            "choices": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nikola Tesla"],
+            "answer": "Albert Einstein"
         }
     ]
 }
