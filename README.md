@@ -43,12 +43,6 @@ WHEN the quiz is over
 THEN I can start a new quiz
 ```
 
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![A GIF demonstrates a functioning quiz.](./Assets/19-testing-homework-demo.gif)
-
 ## Getting Started
 
 This Challenge combines many of the skills we've covered so far. In addition to the user story and acceptance criteria, we’ve provided some guidelines to help you get started.
@@ -62,29 +56,6 @@ Your testing should use [Cypress](https://docs.cypress.io/guides/overview/why-cy
 ```bash
 npm run test
 ```
-
-It's recommended that you start with a directory structure that looks like the following example:
-
-```md
-.
-├── client/                 // the client application
-├── cypress/                // Folder for Cypress
-    ├── component/          // Folder for component tests
-        └── Quiz.cy.jsx     // Component tests for the Quiz component
-    ├── e2e/                // Folder for end-to-end tests
-        └── quiz.cy.js      // End-to-end tests for the Tech Quiz
-    ├── fixtures/           // Folder for test fixtures
-        └── questions.json  // Mock data for testing
-    └── tsconfig.json
-├── server/                 // the server application
-├── .gitignore
-├── cypress.config.ts       // Runs the application using imports from lib/
-├── package.json
-├── tsconfig.json
-└── README.md              // App description, link to video, setup and usage instructions           
-```
-
-**Note**: The server for this application requires environment variables to function properly. You'll need to rename the `.env.example` file to `.env`.
 
 ## Grading Requirements
 
