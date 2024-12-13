@@ -1,54 +1,268 @@
-{
-    "quiz":[
+[
+    {
+      "_id": "674077c30ee859166dd23dc3",
+      "question": "What does the // operator do in Python?",
+      "answers": [
         {
-            "question": "What is the capital of France?",
-            "choices": ["Paris", "London", "Berlin", "Madrid"],
-            "answer": "Paris"
+          "text": "Performs integer division",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dc4"
         },
         {
-            "question": "Which planet is known as the Red Planet?",
-            "choices": ["Earth", "Mars", "Jupiter", "Saturn"],
-            "answer": "Mars"
+          "text": "Performs floating-point division",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc5"
         },
         {
-            "question": "What is the largest ocean on Earth?",
-            "choices": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-            "answer": "Pacific Ocean"
+          "text": "Calculates the power of a number",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc6"
         },
         {
-            "question": "Who wrote 'To Kill a Mockingbird'?",
-            "choices": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
-            "answer": "Harper Lee"
-        },
-        {
-            "question": "What is the smallest prime number?",
-            "choices": ["0", "1", "2", "3"],
-            "answer": "2"
-        },
-        {
-            "question": "What is the chemical symbol for water?",
-            "choices": ["H2O", "O2", "CO2", "H2"],
-            "answer": "H2O"
-        },
-        {
-            "question": "Who painted the Mona Lisa?",
-            "choices": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
-            "answer": "Leonardo da Vinci"
-        },
-        {
-            "question": "What is the hardest natural substance on Earth?",
-            "choices": ["Gold", "Iron", "Diamond", "Platinum"],
-            "answer": "Diamond"
-        },
-        {
-            "question": "What is the speed of light?",
-            "choices": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
-            "answer": "300,000 km/s"
-        },
-        {
-            "question": "Who developed the theory of relativity?",
-            "choices": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nikola Tesla"],
-            "answer": "Albert Einstein"
+          "text": "Performs a logical AND operation",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc7"
         }
-    ]
-}
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23dbe",
+      "question": "Which method is used to remove whitespace from the beginning and end of a string?",
+      "answers": [
+        {
+          "text": "strip()",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dbf"
+        },
+        {
+          "text": "trim()",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc0"
+        },
+        {
+          "text": "clean()",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc1"
+        },
+        {
+          "text": "remove()",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dc2"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23dff",
+      "question": "Which of the following is not a built-in data type in Python?",
+      "answers": [
+        {
+          "text": "array",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23e03"
+        },
+        {
+          "text": "list",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23e00"
+        },
+        {
+          "text": "dict",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23e01"
+        },
+        {
+          "text": "tuple",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23e02"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23df0",
+      "question": "How do you create a tuple in Python?",
+      "answers": [
+        {
+          "text": "()",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23df3"
+        },
+        {
+          "text": "[]",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df1"
+        },
+        {
+          "text": "{}",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df2"
+        },
+  
+        {
+          "text": "tuple[]",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df4"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23daa",
+      "question": "Which of the following is a mutable data type in Python?",
+      "answers": [
+        {
+          "text": "list",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dad"
+        },
+        {
+          "text": "str",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dab"
+        },
+        {
+          "text": "tuple",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dac"
+        },
+  
+        {
+          "text": "int",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dae"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23df5",
+      "question": "What is the output of print(3 == 3.0)?",
+      "answers": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23df7"
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df6"
+        },
+  
+        {
+          "text": "3",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df8"
+        },
+        {
+          "text": "3.0",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23df9"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23ddc",
+      "question": "What does the range function do?",
+      "answers": [
+        {
+          "text": "Creates an iterator that generates a sequence of numbers",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dde"
+        },
+        {
+          "text": "Generates a list of numbers",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23ddd"
+        },
+  
+        {
+          "text": "Creates a list of tuples",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23ddf"
+        },
+        {
+          "text": "Generates random numbers",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23de0"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23deb",
+      "question": "What does the method append() do in a list?",
+      "answers": [
+        {
+          "text": "Adds a new element at the end of the list",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dec"
+        },
+        {
+          "text": "Removes the last element of the list",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23ded"
+        },
+        {
+          "text": "Sorts the list in ascending order",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dee"
+        },
+        {
+          "text": "Removes all elements from the list",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23def"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23db4",
+      "question": "Which of the following is used to create an empty set?",
+      "answers": [
+        {
+          "text": "set()",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23db7"
+        },
+        {
+          "text": "{}",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23db5"
+        },
+        {
+          "text": "[]",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23db6"
+        },
+  
+        {
+          "text": "()",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23db8"
+        }
+      ]
+    },
+    {
+      "_id": "674077c30ee859166dd23dcd",
+      "question": "What is the output of type(3.14)?",
+      "answers": [
+        {
+          "text": "<class 'float'>",
+          "isCorrect": true,
+          "_id": "674077c30ee859166dd23dcf"
+        },
+        {
+          "text": "<class 'int'>",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dce"
+        },
+  
+        {
+          "text": "<class 'complex'>",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dd0"
+        },
+        {
+          "text": "<class 'decimal'>",
+          "isCorrect": false,
+          "_id": "674077c30ee859166dd23dd1"
+        }
+      ]
+    }
+  ]

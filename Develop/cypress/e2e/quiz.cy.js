@@ -1,6 +1,6 @@
 describe("quiz", () => {
     beforeEach(() => {
-        cy.visit("http://localhost:3000/");
+        cy.visit("http://localhost:3001/");
 });
     it("the quiz start button is rendered", () => {
         cy.findByRole("button", { name: "Start Quiz" }).should("exist");
