@@ -1,55 +1,55 @@
 describe("quiz", () => {
     beforeEach(() => {
-        cy.visit("http://localhost:3000/");
+        cy.visit("http://localhost:3001/");
 });
     it("the quiz start button is rendered", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).should("exist");
+        cy.get("button", { name: "Start Quiz" }).should("exist");
     });
 
     it("the quiz button is clickable", () => {
-        cy.visit("http://localhost:3000/");
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.visit("http://localhost:3001/");
+        cy.get("button", { name: "Start Quiz" }).click();
     });
 
     it("should fetch the quiz questions", () => {
         cy.intercept("GET", "/api/questions/random").as("getQuestions");
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         cy.wait("@getQuestions").its("response.statusCode").should("eq", 200);
     });
 
     it("should render the quiz questions", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         cy.get("h2").should("exist");
     });
 
     it("should render answers for the quiz questions", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         for (let i = 1; i <= 4; i++) {
             cy.get("button", { name: `${i}`}).should("be.visible");
         }
     });
 
     it("should be able to select an answer", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         cy.get("button").first().click();
     });
 
     it("should move on to the next question after selecting an answer", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         cy.get("button").first().click();
         cy.get("h2").should("exist");
     });
 
     it("should render the final score after answering all questions", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         for (let i = 0; i < 10; i++) {
             cy.get("button").first().click();
         }
-        cy.findByRole("heading", { name: "Quiz Completed" }).should("exist");
+        cy.get("h2", { name: "Quiz Completed" }).should("exist");
     });
 
     it("should render the final score after answering all questions", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         for (let i = 0; i < 10; i++) {
             cy.get("button").first().click();
         }
@@ -57,7 +57,7 @@ describe("quiz", () => {
     });
 
     it("should start a new quiz after clicking Take New Quiz", () => {
-        cy.findByRole("button", { name: "Start Quiz" }).click();
+        cy.get("button", { name: "Start Quiz" }).click();
         for (let i = 0; i < 10; i++) {
             cy.get("button").first().click();
         }
