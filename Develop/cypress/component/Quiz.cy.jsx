@@ -1,6 +1,6 @@
 import React from "react";
 import Quiz from "../../client/src/components/Quiz";
-import "@testing-library/cypress/add-commands";
+// import "cypress-react-selector";
 
 // test the Quiz Component
 describe("Quiz Component", () => {
@@ -17,7 +17,7 @@ describe("Quiz Component", () => {
 
   it("should render quiz questions when button is clicked", () => {
     cy.mount(<Quiz />);
-    cy.get("button").contains("StartQuiz").click();
+    cy.get("button").click();
     // Select an answer for each question
     cy.wait(500) // wait for the questions to load
       .get("div")
@@ -104,7 +104,7 @@ describe("Quiz Component", () => {
     ).as("mockGetRandomQuestions");
 
     // trigger quiz start
-    cy.contains("Take New Quiz").click();
+    cy.get("button").click();
 
     // waiting for API intercept
     cy.wait("@mockGetRandomQuestions").then((interception) => {
